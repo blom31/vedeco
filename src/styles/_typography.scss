@@ -1,0 +1,79 @@
+/* src/styles/_typography.scss */
+@use 'index' as *;
+
+/* Typography utility classes */
+
+.text-headline-lg {
+  font-family: $font-playfair;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.text-headline-lg-mobile {
+  font-family: $font-playfair;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+.text-headline-md {
+  font-family: $font-playfair;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.font-display-lg {
+  font-family: $font-playfair;
+  font-weight: 700;
+}
+
+.font-headline-lg {
+  font-family: $font-playfair;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: $font-playfair;
+  font-weight: 500;
+}
+
+.font-body-lg {
+  font-family: $font-dm-sans;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: $font-dm-sans;
+  font-weight: 400;
+}
+
+.font-label-caps {
+  font-family: $font-dm-sans;
+  font-weight: 600;
+}
+
+.text-body-lg {
+  font-family: $font-dm-sans;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+
+.text-label-caps {
+  font-family: $font-dm-sans;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

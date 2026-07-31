@@ -1,0 +1,96 @@
+@use "index" as *;
+
+.cta {
+  margin-bottom: $section-gap;
+  padding-left: $margin-mobile;
+  padding-right: $margin-mobile;
+
+  @media (min-width: 768px) {
+    padding-left: $margin-desktop;
+    padding-right: $margin-desktop;
+  }
+
+  &__box {
+    background-color: $primary;
+    color: $on-primary;
+    padding: 48px;
+    border-radius: 0.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px; // gap-12
+    position: relative;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      padding: 96px; // p-24
+      flex-direction: row;
+    }
+  }
+
+  &__terrazzo {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+    max-width: 36rem; // max-w-xl
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &__title {
+    font-family: $font-playfair;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    margin-bottom: 16px; // mb-4
+  }
+
+  &__desc {
+    font-family: $font-dm-sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.8;
+  }
+
+  &__btn-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: auto;
+    }
+  }
+
+  &__btn {
+    background-color: $on-primary;
+    color: $primary;
+    padding: 20px 48px; // py-5 px-12
+    font-family: $font-dm-sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 0.125rem;
+    text-align: center;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $surface-container-highest;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@use "index" as *;
+
+.featured {
+  padding-top: $section-gap;
+  padding-bottom: $section-gap;
+  padding-left: $margin-mobile;
+  padding-right: $margin-mobile;
+  background-color: $background;
+
+  @media (min-width: 768px) {
+    padding-left: $margin-desktop;
+    padding-right: $margin-desktop;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 64px; // mb-16
+  }
+
+  &__title {
+    font-family: $font-playfair;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    color: $primary;
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  &__tagline {
+    font-family: $font-dm-sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: $secondary;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $gutter;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $surface-container-low;
+    border-radius: 0.125rem;
+    overflow: hidden;
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    &-img-wrapper {
+      position: relative;
+      height: 240px;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+
+      .featured__card:hover & {
+        transform: scale(1.05);
+      }
+    }
+
+    &-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background-color: $tertiary-fixed;
+      color: $on-tertiary-fixed;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-family: $font-dm-sans;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    &-info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+
+    &-title {
+      font-family: $font-playfair;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32px;
+      color: $primary;
+    }
+
+    &-collection {
+      font-family: $font-dm-sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $on-surface-variant;
+    }
+
+    &-price {
+      font-family: $font-dm-sans;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      color: $secondary;
+    }
+  }
+}

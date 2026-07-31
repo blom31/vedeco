@@ -1,0 +1,8 @@
+// Group component partials so main can import them in one statement
+@use 'header' as *;
+@use 'hero' as *;
+@use 'about' as *;
+@use 'featured' as *;
+@use 'testimonials' as *;
+@use 'cta' as *;
+@use 'footer' as *;

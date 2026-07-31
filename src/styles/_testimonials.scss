@@ -1,0 +1,167 @@
+@use "index" as *;
+
+.testimonials {
+  padding-top: $section-gap;
+  padding-bottom: $section-gap;
+  padding-left: $margin-mobile;
+  padding-right: $margin-mobile;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding-left: $margin-desktop;
+    padding-right: $margin-desktop;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 48px; // mb-12
+    gap: 24px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__intro {
+    max-width: 42rem; // max-w-2xl
+    width: 100%;
+    text-align: left;
+  }
+
+  &__tagline {
+    font-family: $font-dm-sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: $secondary;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-family: $font-playfair;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    color: $primary;
+    margin-top: 8px;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  &__nav-buttons {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__nav-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    border: 1px solid $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $primary;
+      color: $on-primary;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $gutter;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; // space-y-4
+    padding: 32px; // p-8
+    background-color: $surface-container;
+    border-radius: 0.125rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $primary;
+
+      .testimonials__card-quote-icon {
+        color: $on-primary;
+      }
+      .testimonials__card-quote {
+        color: $on-primary;
+      }
+      .testimonials__card-divider {
+        border-top-color: rgba($on-primary, 0.2);
+      }
+      .testimonials__card-author {
+        color: $on-primary;
+      }
+      .testimonials__card-location {
+        color: rgba($on-primary, 0.7);
+      }
+    }
+
+    &-quote-icon {
+      color: $primary;
+      font-size: 36px !important; // text-4xl
+      font-variation-settings:
+        "FILL" 1,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+      transition: color 0.3s ease;
+    }
+
+    &-quote {
+      font-family: $font-dm-sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $on-surface;
+      transition: color 0.3s ease;
+    }
+
+    &-divider {
+      padding-top: 16px;
+      border-top: 1px solid $outline-variant;
+      transition: border-color 0.3s ease;
+    }
+
+    &-author {
+      font-family: $font-dm-sans;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $primary;
+      transition: color 0.3s ease;
+    }
+
+    &-location {
+      font-family: $font-dm-sans;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $on-surface-variant;
+      transition: color 0.3s ease;
+    }
+  }
+}

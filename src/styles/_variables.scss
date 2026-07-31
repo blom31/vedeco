@@ -1,0 +1,27 @@
+// VEDeco Theme Variables
+
+$primary: #4e6053;
+$secondary: #8e4c41;
+$background: #fbf9f7;
+$on-surface: #1b1c1b;
+$on-surface-variant: #434843;
+$outline-variant: #c3c8c2;
+$tertiary-fixed: #f4dfcb;
+$on-tertiary-fixed: #241a0e;
+$surface-container: #efedec;
+$primary-container: #66796b;
+$on-primary: #ffffff;
+$surface-container-low: #f5f3f1;
+$surface-container-highest: #e4e2e0;
+
+// Fonts
+$font-playfair: 'Playfair Display', serif;
+$font-dm-sans: 'DM Sans', sans-serif;
+$gutter: 1rem; // spacing between grid items
+
+// Base spacing token used across components
+$base: 0.5rem;
+
+$margin-mobile: 1.5rem;
+$margin-desktop: 3rem;
+$section-gap: 4rem;

@@ -1,0 +1,61 @@
+@use 'index' as *;
+
+// CSS Reset & Base Styles
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-dm-sans;
+  background-color: $background;
+  color: $on-surface;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Global Text Selection Color
+::selection {
+  background-color: rgba($primary, 0.2);
+}
+
+// Layout Helper Classes
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $margin-mobile;
+  padding-right: $margin-mobile;
+
+  @media (min-width: 768px) {
+    padding-left: $margin-desktop;
+    padding-right: $margin-desktop;
+  }
+}
+
+.section-padding {
+  padding-top: $section-gap;
+  padding-bottom: $section-gap;
+}
