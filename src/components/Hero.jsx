@@ -1,5 +1,5 @@
 import React from "react";
-import imgHero from "../assets/Header2.WEBP";
+import imgHero from "../assets/Header2.webp";
 
 function Hero() {
   return (
