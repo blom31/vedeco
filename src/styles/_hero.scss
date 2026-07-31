@@ -6,17 +6,30 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  background-color: $surface-container;
+
+  @media (max-width: 767px) {
+    min-height: 100vh;
+  }
 
   &__bg {
     position: absolute;
     inset: 0;
     z-index: 0;
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__image {
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: auto;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__overlay {
@@ -29,8 +42,16 @@
     position: relative;
     z-index: 10;
     width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
     padding-left: $margin-mobile;
     padding-right: $margin-mobile;
+
+    @media (max-width: 767px) {
+      min-height: 100vh;
+      background: linear-gradient(135deg, rgba($surface-container, 0.96), rgba($tertiary-fixed, 0.72));
+    }
 
     @media (min-width: 768px) {
       padding-left: $margin-desktop;
