@@ -40,7 +40,7 @@
     background-color: rgba(0, 0, 0, 0.1);
 
     @media (max-width: 767px) {
-      // background-color: rgba($background, 0.45);
+      background-color: rgba($background, 0.45);
     }
   }
 
@@ -55,7 +55,7 @@
     padding-right: $margin-mobile;
 
     @media (max-width: 767px) {
-      min-height: 100vh;
+      min-height: 85vh;
     }
 
     @media (min-width: 768px) {
@@ -74,14 +74,15 @@
     padding: 32px;
     border-left: 4px solid $primary;
     margin-left: 48rem;
-
+    
     @media (max-width: 767px) {
       width: 100%;
       margin-left: 0;
       background-color: rgba($background, 0.1);
-      // border-left: none;
       border-bottom: 4px solid $primary;
-      margin-top: 2em;
+      padding: 20px;
+      margin-top: 60px;
+
     }
 
     @media (min-width: 768px) {
