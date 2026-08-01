@@ -18,10 +18,6 @@
     z-index: 0;
     width: 100%;
     height: 100%;
-
-    @media (max-width: 767px) {
-      display: none;
-    }
   }
 
   &__image {
@@ -36,6 +32,10 @@
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 767px) {
+      background-color: rgba($background, 0.45);
+    }
   }
 
   &__container {
@@ -50,7 +50,6 @@
 
     @media (max-width: 767px) {
       min-height: 100vh;
-      background: linear-gradient(135deg, rgba($surface-container, 0.96), rgba($tertiary-fixed, 0.72));
     }
 
     @media (min-width: 768px) {
@@ -69,6 +68,14 @@
     padding: 32px;
     border-left: 4px solid $primary;
     margin-left: 48rem;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-left: 0;
+      background-color: rgba($background, 0.72);
+      border-left: none;
+      border-bottom: 4px solid $primary;
+    }
 
     @media (min-width: 768px) {
       padding: 48px;
