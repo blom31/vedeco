@@ -46,7 +46,7 @@ function App() {
       className="bg-background text-on-surface selection:bg-primary/20 min-h-screen"
     >
       <Header />
-      <main className="pt-20">
+      <main>
         <Hero />
         <About />
         <FeaturedProducts />
