@@ -20,6 +20,9 @@
     height: 100%;
     @media (max-width: 767px) {
       background-image: url("../assets/mesa1.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 

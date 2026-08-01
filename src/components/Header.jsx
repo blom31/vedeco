@@ -21,7 +21,7 @@ function Header() {
     <header className="header">
       <nav className="header__nav">
         <div className="header__logo-container">
-          <img alt="VEDeco Logo" className="header__logo-img" src={logo} />
+          <img alt="VEdeco Logo" className="header__logo-img" src={logo} />
           <span className="header__logo-text">VEdeco</span>
         </div>
         <div className="header__menu">

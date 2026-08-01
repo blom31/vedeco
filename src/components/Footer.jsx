@@ -1,4 +1,4 @@
-import footerLogo from "../assets/logo_footer.webp";
+import logo from "../assets/logo_circ.webp";
 
 function Footer() {
   return (
@@ -10,9 +10,9 @@ function Footer() {
               alt="VEDeco Footer Logo"
               className="footer__logo-img"
               loading="lazy"
-              src={footerLogo}
+              src={logo}
             />
-            <span className="footer__logo-text">VEDeco</span>
+            <span className="footer__logo-text">VEdeco</span>
           </div>
           <p className="footer__desc">
             Artesanos del terrazo contemporáneo. Creamos piezas de diseño que
