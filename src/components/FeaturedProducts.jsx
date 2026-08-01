@@ -1,7 +1,7 @@
-import mesa1 from "../assets/mesa 1.webp";
-import mesa2 from "../assets/mesa 2.webp";
-import mesa3 from "../assets/mesa 3.webp";
-import mesa4 from "../assets/mesa 4.webp";
+import mesa1 from "../assets/mesa1.webp";
+import mesa2 from "../assets/mesa2.webp";
+import mesa3 from "../assets/mesa3.webp";
+import mesa4 from "../assets/mesa4.webp";
 
 function FeaturedProducts() {
   const products = [
