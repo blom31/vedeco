@@ -1,10 +1,7 @@
-import React from "react";
-
-import mesa1 from "../assets/mesa 1.png";
-import mesa2 from "../assets/mesa 2.png";
-import mesa3 from "../assets/mesa 3.png";
-import mesa4 from "../assets/mesa 4.png";
-import mesa5 from "../assets/mesa5.jpg";
+import mesa1 from "../assets/mesa 1.webp";
+import mesa2 from "../assets/mesa 2.webp";
+import mesa3 from "../assets/mesa 3.webp";
+import mesa4 from "../assets/mesa 4.webp";
 
 function FeaturedProducts() {
   const products = [
@@ -37,7 +34,7 @@ function FeaturedProducts() {
         {products.map((p, i) => (
           <div key={i} className="featured__card">
             <div className="featured__card-img-wrapper">
-              <img src={p.image} alt={p.title} className="featured__card-img" />
+              <img src={p.image} alt={p.title} loading="lazy" className="featured__card-img" />
             </div>
             <div className="featured__card-info">
               <h3 className="featured__card-title">{p.title}</h3>

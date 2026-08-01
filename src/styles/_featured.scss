@@ -12,11 +12,6 @@
     padding-right: $margin-desktop;
   }
 
-  &__header {
-    text-align: center;
-    margin-bottom: 64px; // mb-16
-  }
-
   &__title {
     font-family: $font-playfair;
     font-size: 32px;
@@ -29,17 +24,6 @@
       font-size: 48px;
       line-height: 56px;
     }
-  }
-
-  &__tagline {
-    font-family: $font-dm-sans;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 16px;
-    letter-spacing: 0.1em;
-    color: $secondary;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
   }
 
   &__grid {
@@ -87,22 +71,6 @@
       }
     }
 
-    &-badge {
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      background-color: $tertiary-fixed;
-      color: $on-tertiary-fixed;
-      padding: 4px 12px;
-      border-radius: 9999px;
-      font-family: $font-dm-sans;
-      font-size: 12px;
-      font-weight: 600;
-      line-height: 16px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
     &-info {
       padding: 20px;
       display: flex;
@@ -125,14 +93,6 @@
       font-weight: 400;
       line-height: 24px;
       color: $on-surface-variant;
-    }
-
-    &-price {
-      font-family: $font-dm-sans;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 28px;
-      color: $secondary;
     }
   }
 }

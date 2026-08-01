@@ -1,4 +1,4 @@
-import React from "react";
+import aboutImg from "../assets/about.webp";
 
 function About() {
   return (
@@ -34,7 +34,8 @@ function About() {
           <img
             className="about__img"
             alt="Artisan hands working on terrazzo"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Xa1oYR1ICPpNAd36vyZMg8MG65gFmMM4-CK9pEzEexGvMlRur27vOpgDKraucDNRBJS3BYg8CbYKs2UFwTkKqk9H80IMCd3Txh6tX9hVRYuXHKH4P3zIwgNi1JEGWPBA7SlxwdW6N7sCYzQ6jzM8xvK6D5fbpirPXh3h4ayRzKHbxHZrKJjxbg8PgvFAfFieWvT1uM-hu3oahBdjtpWXM_ReGg7FmouOjOU845mBoLJbLADz1Xw"
+            loading="lazy"
+            src={aboutImg}
           />
           <div className="about__quote-box">
             <p className="about__quote">

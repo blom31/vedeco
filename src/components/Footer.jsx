@@ -1,4 +1,4 @@
-import React from "react";
+import footerLogo from "../assets/logo_footer.webp";
 
 function Footer() {
   return (
@@ -9,7 +9,8 @@ function Footer() {
             <img
               alt="VEDeco Footer Logo"
               className="footer__logo-img"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbuDysDA-ivw2EhFUOCF32k2IqPOABVYTdWEQxG1KsRW8OrXQYfOyDwWDx9G_tyXukosA-dgP2DOqXKYc8csG-WuzIFs_prxsfeTw4LlVcYgC0_baw9ysNMkAFNy7zDEJXo6hiY9eD_ncDGVOR4QmcgSP2RW-uUJ4Smd3ynMP4OD_GEQKACdXDNUuy2hc7FK6VLlhKcXMs0X20Gz9XqGRwVWqE3xBQ1f5R8nff6QmYijcWS-4yyW5fMPQcsaX4Vezu"
+              loading="lazy"
+              src={footerLogo}
             />
             <span className="footer__logo-text">VEDeco</span>
           </div>

@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import logo from "../assets/logo_circ.png";
+import { useEffect } from "react";
+import logo from "../assets/logo_circ.webp";
 
 function Header() {
   useEffect(() => {
