@@ -38,7 +38,7 @@ function Header() {
             Custom Orders
           </a>
         </div>
-        <button className="header__btn">Inquire</button>
+        {/* <button className="header__btn">Inquire</button> */}
       </nav>
     </header>
   );

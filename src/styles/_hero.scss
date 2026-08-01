@@ -26,6 +26,9 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__overlay {
