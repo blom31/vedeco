@@ -25,6 +25,11 @@ function FeaturedProducts() {
       description: "Pieza pequeña ideal para espacios reducidos.",
       image: mesa4,
     },
+    {
+      title: "Mesa Auxiliar Terrazzo",
+      description: "Pieza pequeña ideal para espacios reducidos.",
+      image: mesa3,
+    },
   ];
 
   return (

@@ -32,7 +32,11 @@
     gap: $gutter;
 
     @media (min-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(5, 1fr);
     }
   }
 
@@ -55,7 +59,7 @@
 
     &-img-wrapper {
       position: relative;
-      height: 240px;
+      height: 360px;
       overflow: hidden;
       background-color: #ffffff;
     }
