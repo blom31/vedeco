@@ -36,17 +36,28 @@ function Header() {
           <img alt="VEdeco Logo" className="header__logo-img" src={logo} />
           <span className="header__logo-text">VEdeco</span>
         </a>
-        <div className="header__menu">
-          <a className="header__link" href="#proceso">
+        <button
+          type="button"
+          className={`header__hamburger ${isMenuOpen ? "header__hamburger--open" : ""}`}
+          aria-label="Toggle menu"
+          aria-expanded={isMenuOpen}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <span className="header__hamburger-bar"></span>
+          <span className="header__hamburger-bar"></span>
+          <span className="header__hamburger-bar"></span>
+        </button>
+         <div className={`header__menu ${isMenuOpen ? "header__menu--open" : ""}`}>
+          <a className="header__link" href="#proceso" onClick={() => setIsMenuOpen(false)}>
             Proceso
           </a>
-          <a className="header__link" href="#products">
+          <a className="header__link" href="#products" onClick={() => setIsMenuOpen(false)}>
             Catálogo
           </a>
-          {/* <a className="header__link" href="#">
+          {/* <a className="header__link" href="#" onClick={() => setIsMenuOpen(false)}>
             Projects
           </a> */}
-          <a className="header__link" href="#pedidos">
+          <a className="header__link" href="#pedidos" onClick={() => setIsMenuOpen(false)}>
             Pedidos
           </a>
         </div>
