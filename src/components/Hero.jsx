@@ -24,10 +24,12 @@ function Hero() {
             creadas para perdurar.
           </p>
           <div className="hero__actions">
-            <button className="hero__btn hero__btn--primary">
+            <a className="hero__btn hero__btn--primary" href="#products">
               Explorar Catálogo
-            </button>
-            <button className="hero__btn hero__btn--secondary">Procesos</button>
+            </a>
+            <a className="hero__btn hero__btn--secondary" href="#proceso">
+              Procesos
+            </a>
           </div>
         </div>
       </div>

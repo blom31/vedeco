@@ -2,7 +2,7 @@ import aboutImg from "../assets/about.webp";
 
 function About() {
   return (
-    <section className="about">
+    <section className="about" id="proceso">
       <div className="about__pattern"></div>
       <div className="about__grid">
         <div className="about__content">

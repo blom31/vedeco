@@ -2,7 +2,7 @@
 
 function CTA() {
   return (
-    <section className="cta">
+    <section className="cta" id="pedidos">
       <div className="cta__box">
         <div className="cta__terrazzo"></div>
         <div className="cta__content">

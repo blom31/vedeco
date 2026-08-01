@@ -1,7 +1,13 @@
-@use 'index' as *;
+@use "index" as *;
 
 // CSS Reset & Base Styles
-*, *::before, *::after {
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;

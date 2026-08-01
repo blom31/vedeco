@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/logo_circ.webp";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const headerEl = document.querySelector("header");
@@ -17,25 +19,35 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleLogoClick = (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <header className="header">
       <nav className="header__nav">
-        <div className="header__logo-container">
+        <a
+          aria-label="Volver al inicio"
+          className="header__logo-container header__logo-link"
+          href="#top"
+          onClick={handleLogoClick}
+        >
           <img alt="VEdeco Logo" className="header__logo-img" src={logo} />
           <span className="header__logo-text">VEdeco</span>
-        </div>
+        </a>
         <div className="header__menu">
+          <a className="header__link" href="#proceso">
+            Proceso
+          </a>
           <a className="header__link" href="#products">
             Catálogo
           </a>
           {/* <a className="header__link" href="#">
             Projects
           </a> */}
-          <a className="header__link" href="#">
-            Proceso
-          </a>
-          <a className="header__link" href="#">
-            Custom Orders
+          <a className="header__link" href="#pedidos">
+            Pedidos
           </a>
         </div>
         {/* <button className="header__btn">Inquire</button> */}
