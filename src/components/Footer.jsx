@@ -1,17 +1,9 @@
-import logo from "../assets/logo_circ.webp";
-
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer__grid">
         <div className="footer__info">
           <div className="footer__logo-container">
-            <img
-              alt="VEDeco Footer Logo"
-              className="footer__logo-img"
-              loading="lazy"
-              src={logo}
-            />
             <span className="footer__logo-text">VEdeco</span>
           </div>
           <p className="footer__desc">
@@ -20,32 +12,23 @@ function Footer() {
             artesanal.
           </p>
           <div className="footer__socials">
-            <a className="footer__social-link" href="#">
+            <a
+              className="footer__social-link"
+              target="_blank"
+              href="https://www.instagram.com/ve.deco2026/"
+            >
               Instagram
             </a>
-            <a className="footer__social-link" href="#">
+            {/* <a className="footer__social-link" href="#">
               Pinterest
             </a>
             <a className="footer__social-link" href="#">
               LinkedIn
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="footer__nav-groups">
-          <div className="footer__nav-group">
-            <h4 className="footer__group-title">COMPAÑÍA</h4>
-            <nav className="footer__group-links">
-              <a className="footer__group-link" href="#">
-                Nosotros
-              </a>
-              <a className="footer__group-link" href="#">
-                Proceso
-              </a>
-              <a className="footer__group-link" href="#">
-                Proyectos
-              </a>
-            </nav>
-          </div>
+          
           <div className="footer__nav-group">
             <h4 className="footer__group-title">SOPORTE</h4>
             <nav className="footer__group-links">
@@ -64,7 +47,7 @@ function Footer() {
       </div>
       <div className="footer__bar">
         <p className="footer__copyright">
-          © 2024 VEDeco Artisanal Terrazzo. All rights reserved.
+          © 2026 VEdeco Artisanal Terrazzo. All rights reserved.
         </p>
         <div className="footer__bar-links">
           <a className="footer__bar-link" href="#">

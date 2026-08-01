@@ -50,7 +50,7 @@ function App() {
         <Hero />
         <About />
         <FeaturedProducts />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <CTA />
       </main>
       <Footer />
