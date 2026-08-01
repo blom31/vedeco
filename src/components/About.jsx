@@ -9,7 +9,7 @@ function About() {
           <span className="about__tag">NUESTRO ORIGEN</span>
           <h2 className="about__title">El Arte del Terrazo</h2>
           <p className="about__text-lg">
-            En VEDeco, cada pieza comienza como una selección cuidadosa de
+            En VEdeco, cada pieza comienza como una selección cuidadosa de
             minerales naturales. El terrazo no es solo un material; es un lienzo
             donde la piedra caliza, el mármol y el granito se encuentran para
             formar patrones orgánicos imposibles de replicar.

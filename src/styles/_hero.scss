@@ -23,6 +23,7 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      
     }
   }
 
@@ -42,9 +43,9 @@
     inset: 0;
     background-color: rgba(0, 0, 0, 0.1);
 
-    // @media (max-width: 767px) {
-    //   background-color: rgba($background, 0.45);
-    // }
+    @media (max-width: 767px) {
+      // background-color: rgba($background, 0.45);
+    }
   }
 
   &__container {
@@ -84,6 +85,7 @@
       background-color: rgba($background, 0.1);
       border-left: none;
       border-bottom: 4px solid $primary;
+      display: none;
     }
 
     @media (min-width: 768px) {

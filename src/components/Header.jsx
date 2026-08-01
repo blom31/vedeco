@@ -29,13 +29,13 @@ function Header() {
       <nav className="header__nav">
         <a
           aria-label="Volver al inicio"
-          className="header__logo-container header__logo-link"
+          className="header__logo-link"
           href="#top"
           onClick={handleLogoClick}
         >
           <img alt="VEdeco Logo" className="header__logo-img" src={logo} />
-          <span className="header__logo-text">VEdeco</span>
         </a>
+        <span className="header__logo-text">VEdeco</span>
         <button
           type="button"
           className={`header__hamburger ${isMenuOpen ? "header__hamburger--open" : ""}`}
@@ -47,7 +47,7 @@ function Header() {
           <span className="header__hamburger-bar"></span>
           <span className="header__hamburger-bar"></span>
         </button>
-         <div className={`header__menu ${isMenuOpen ? "header__menu--open" : ""}`}>
+        <div className={`header__menu ${isMenuOpen ? "header__menu--open" : ""}`}>
           <a className="header__link" href="#proceso" onClick={() => setIsMenuOpen(false)}>
             Proceso
           </a>
