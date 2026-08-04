@@ -10,7 +10,7 @@
 
 
   @media (max-width: 767px) {
-    min-height: 80vh;
+    min-height: 50vh;
   }
 
   &__bg {
@@ -85,7 +85,7 @@ display: none;
       margin-left: 0;
       background-color: rgba($background, 0.1);
       border-bottom: 4px solid $primary;
-      padding: 20px;
+      padding-top: 80px;
       // margin-top: 60px;
 
     }
