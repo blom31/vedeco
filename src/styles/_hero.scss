@@ -2,16 +2,15 @@
 
 .hero {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
   background-color: $surface-container;
 
-
-  @media (max-width: 767px) {
-    min-height: 50vh;
-  }
+   @media (max-width: 767px) {
+    min-height: 50%;
+   }
 
   &__bg {
     position: absolute;
@@ -19,9 +18,7 @@
     z-index: 0;
     width: 100%;
     height: 100%;
-     @media (max-width: 767px) {
-height: initial;
-    }
+ 
   }
 
   &__image {
@@ -31,10 +28,8 @@ height: initial;
     object-fit: cover;
     object-position: center;
 
-
-
      @media (max-width: 767px) {
-display: none;
+    display: none;
 
     }
   }
@@ -60,9 +55,9 @@ display: none;
     padding-right: $margin-mobile;
 
     @media (max-width: 767px) {
-      min-height: 85vh;
+      min-height: 50vh;
     }
-
+    
     @media (min-width: 768px) {
       padding-left: $margin-desktop;
       padding-right: $margin-desktop;
@@ -85,16 +80,10 @@ display: none;
       margin-left: 0;
       background-color: rgba($background, 0.1);
       border-bottom: 4px solid $primary;
-      padding-top: 80px;
-      // margin-top: 60px;
-
-    }
-
-    @media (min-width: 768px) {
-      padding: 28px;
+      padding: 20px;
+      margin-top: 90px;
     }
   }
-
   &__title {
     font-family: $font-playfair;
     font-size: 32px;
