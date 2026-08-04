@@ -11,36 +11,33 @@ function Footer() {
             celebran la belleza de los materiales naturales y la maestría
             artesanal.
           </p>
-          <div className="footer__socials">
-            <a
-              className="footer__social-link"
-              target="_blank"
-              href="https://www.instagram.com/ve.deco2026/"
-            >
-              Instagram
-            </a>
-            {/* <a className="footer__social-link" href="#">
-              Pinterest
-            </a>
-            <a className="footer__social-link" href="#">
-              LinkedIn
-            </a> */}
-          </div>
         </div>
         <div className="footer__nav-groups">
-          
           <div className="footer__nav-group">
-            <h4 className="footer__group-title">SOPORTE</h4>
+            <h4 className="footer__group-title">CONTACTOS</h4>
             <nav className="footer__group-links">
-              <a className="footer__group-link" href="#">
-                Contacto
+              <div className="footer__socials">
+                <a
+                  className="footer__group-links"
+                  target="_blank"
+                  href="https://www.instagram.com/ve.deco2026/"
+                >
+                  Instagram: @ve.deco2026
+                </a>
+              </div>
+              <a
+                className="footer__group-links"
+                target="_blank"
+                href=""
+              >
+                Correo: vedecoterrazo@gmail.com
               </a>
-              <a className="footer__group-link" href="#">
+              {/* <a className="footer__group-link" href="#">
                 Preguntas Frecuentes
               </a>
               <a className="footer__group-link" href="#">
                 Cuidado del Producto
-              </a>
+              </a> */}
             </nav>
           </div>
         </div>
