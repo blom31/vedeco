@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../assets/logo_circ.webp";
+import logo from "../assets/logo_rect_sin_fondo.webp";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
