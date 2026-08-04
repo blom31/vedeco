@@ -20,16 +20,12 @@ function Footer() {
                 <a
                   className="footer__group-links"
                   target="_blank"
-                  href="https://www.instagram.com/ve.deco2026/"
-                >
+                  href="https://www.instagram.com/ve.deco2026/">
                   Instagram: @ve.deco2026
                 </a>
               </div>
               <a
-                className="footer__group-links"
-                target="_blank"
-                href=""
-              >
+                className="footer__group-links">
                 Correo: vedecoterrazo@gmail.com
               </a>
               {/* <a className="footer__group-link" href="#">

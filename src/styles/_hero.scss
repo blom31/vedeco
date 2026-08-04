@@ -8,8 +8,9 @@
   overflow: hidden;
   background-color: $surface-container;
 
+
   @media (max-width: 767px) {
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
   &__bg {
@@ -30,8 +31,11 @@ height: initial;
     object-fit: cover;
     object-position: center;
 
+
+
      @media (max-width: 767px) {
 display: none;
+
     }
   }
 
@@ -82,7 +86,7 @@ display: none;
       background-color: rgba($background, 0.1);
       border-bottom: 4px solid $primary;
       padding: 20px;
-      margin-top: 60px;
+      // margin-top: 60px;
 
     }
 
