@@ -1,12 +1,12 @@
-import mesa1 from "../assets/mesa_redonda_1.webp";
-import mesa2 from "../assets/mesa_redonda_2.webp";
-import mesa3 from "../assets/mesa3.webp";
+import mesa1 from "../assets/mesa_redonda_2.webp";
+import mesa2 from "../assets/cuadrada_2.webp";
+import mesa3 from "../assets/plato1.webp";
 import mesa4 from "../assets/mesa4.webp";
 
 function FeaturedProducts() {
   const products = [
     {
-      title: "Mesa Terrazzo Clara",
+      title: "Mesa Terrazzo Redonda",
       description: "Mesa redonda de terrazo con vetas naturales.",
       image: mesa1,
     },
@@ -16,7 +16,7 @@ function FeaturedProducts() {
       image: mesa2,
     },
     {
-      title: "Mesa de Comedor Terrazzo",
+      title: "Plato Redondo de Terrazzo",
       description: "Superficie texturada y acabados artesanales.",
       image: mesa3,
     },
