@@ -30,7 +30,6 @@
 
      @media (max-width: 767px) {
     display: none;
-
     }
   }
 
@@ -68,7 +67,7 @@
     max-width: 45rem; // max-w-3xl
     display: flex;
     flex-direction: column;
-    gap: 32px; // space-y-8
+    gap: 3px; // space-y-8
     background-color: rgba($background, 0.1);
     backdrop-filter: blur(5px);
     padding: 32px;
