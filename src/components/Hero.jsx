@@ -1,4 +1,4 @@
-import imgHero from "../assets/Header2.webp";
+import imgHero from "../assets/hero_copia.webp";
 
 function Hero() {
   return (
