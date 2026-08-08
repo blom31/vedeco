@@ -1,7 +1,7 @@
 import mesa1 from "../assets/mesa_redonda_2.webp";
 import mesa2 from "../assets/cuadrada_2.webp";
 import mesa3 from "../assets/plato1.webp";
-import mesa4 from "../assets/mesa4.webp";
+import mesa4 from "../assets/mesa_cuadrada_cemento_2.webp";
 
 function FeaturedProducts() {
   const products = [
